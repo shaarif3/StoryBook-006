@@ -1,11 +1,14 @@
 import React from 'react';
 import Button from './Button';
+// import Center from '../Center/Center'; // Center is the decorator here as it is used to decorate component in center
+
 export default {
   title: 'Form/Button',
   component: Button,
   args: {
     children: 'Shaarif Button',
   },
+  // decorators: [(story) => <Center>{story()}</Center>],
 };
 
 // beginners method
