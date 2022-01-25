@@ -1,0 +1,19 @@
+.input {
+  padding: 10px 40px;
+  border-radius: 15px;
+}
+.small {
+  width: 40%;
+  background-color: aquamarine;
+  color: black;
+}
+.medium {
+  width: 50%;
+  background-color: rgb(60, 46, 189);
+  color: white;
+}
+.large {
+  width: 60%;
+  background-color: rgb(89, 216, 100);
+  color: black;
+}
