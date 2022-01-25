@@ -2,7 +2,7 @@ import React from 'react';
 // import { addDecorator } from '@storybook/react'; // add decoraor globaly
 // import Center from '../src/components/Center/Center';
 import { Box, ChakraProvider, theme, CSSReset } from '@chakra-ui/react';
-
+import { withConsole } from '@storybook/addon-console';
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   options: {

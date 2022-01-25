@@ -5,8 +5,10 @@ import Button from './Button';
 export default {
   title: 'Form/Button',
   component: Button,
-  args: {
-    children: 'Shaarif Button',
+  argTypes: {
+    children: { control: 'text' },
+    variant: { control: 'text' },
+    onClick: { action: 'clicked' },
   },
   // decorators: [(story) => <Center>{story()}</Center>],
 };
@@ -22,17 +24,14 @@ const Template = (args) => <Button {...args} />;
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
   variant: 'primary',
-  // children: 'Primary args',
+  children: 'Primary args',
+  onClick: console.log('hahahh'),
 };
 export const LongPrimaryA = Template.bind({});
 LongPrimaryA.args = {
-  ...PrimaryA.args,
-  // children: 'Long-Primary args',
-};
-export const SecondaryA = Template.bind({});
-SecondaryA.args = {
-  variant: 'secondary',
-  // children: 'Secondary args',
+  variant: 'danger',
+
+  children: 'Long-Primary args',
 };
 
 //change the name of story
